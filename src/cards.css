@@ -51,24 +51,21 @@ html {
 }
 
 .cardGroup {
-    margin-left: 50%;
-    display: -webkit-inline-flex;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0%;
+    margin: auto;
     padding: 0%;
 }
 
 .cardGroup__card {
-    width: 180px;
+    width: 100%;
     flex-grow: 2;
     flex-shrink: 3;
-    flex-basis: 100px;
+    flex-basis: auto;
     border: 2px solid black;
     border-radius: 0;
 }
@@ -83,13 +80,28 @@ html {
 }
 
 body {
-    border: 2px solid black;
     width: 720px;
     height: 200px;
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    transform: translate(-50%, -50%);
     margin: auto;
     padding: 0%;
+}
+
+@media only screen and (max-width: 340px) {
+    .cardGroup {
+        width: 100%;
+        height: 100%;
+        display: inline-flex;
+        border: 1px solid #CAD0D2;
+        border-radius: 4px;
+        overflow: hidden;
+        margin: auto;
+        padding: 0%;
+    }
+    body {
+        width: 320px;
+        height: 200px;
+        position: absolute;
+        margin: auto;
+        padding: 0%;
+    }
 }
