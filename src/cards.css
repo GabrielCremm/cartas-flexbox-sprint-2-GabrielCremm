@@ -6,8 +6,30 @@ html {
     background-color: #FFFFFF;
 }
 
+
+/* @media only screen and (min-width: 320px) { */
+
 .icon {
     color: #BCD2DA;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 710px;
+    height: 200px;
+    margin: 20px auto;
+    padding: 0%;
+}
+
+body .cardGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0%;
 }
 
 .card {
@@ -50,27 +72,11 @@ html {
     background-color: #EEF3F5;
 }
 
-.cardGroup {
-    width: 100%;
-    height: 100%;
-    display: inline-flex;
-    border: 1px solid #CAD0D2;
-    border-radius: 4px;
-    overflow: hidden;
-    margin: auto;
-    padding: 0%;
-}
-
 .cardGroup__card {
     width: 100%;
-    flex-grow: 2;
-    flex-shrink: 3;
-    flex-basis: auto;
     border: 2px solid black;
     border-radius: 0;
 }
-
-.cardGroup {}
 
 .cardGroup__cardDescription {
     /* flex-grow, flex-shrink, flex-basis */
@@ -79,30 +85,28 @@ html {
     flex-basis: auto;
 }
 
-body {
-    width: 720px;
-    height: 200px;
-    margin: auto;
-    padding: 0%;
-}
 
-@media only screen and (max-width: 800px) {
-    .cardGroup {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #CAD0D2;
-        border-radius: 4px;
-        overflow: hidden;
-    }
-    .cardGroup__card {
-        flex-grow: 1;
-    }
+/* } */
+
+
+/* @media only screen and (min-width: 800px) {
     body {
-        width: 100%;
-        height: 100%;
-        margin: auto;
+        width: 710px;
+        margin: 0 auto;
         padding: 0%;
     }
+
+.cardGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #CAD0D2;
+    border-radius: 4px;
+    overflow: hidden;
 }
+.cardGroup__card {
+    height: 100%;
+    width: 100%;
+}
+} */
