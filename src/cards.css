@@ -4,109 +4,94 @@ html {
     color: #2F3442;
     height: 100%;
     background-color: #FFFFFF;
-}
-
-
-/* @media only screen and (min-width: 320px) { */
-
-.icon {
-    color: #BCD2DA;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
     max-width: 710px;
-    height: 200px;
-    margin: 20px auto;
-    padding: 0%;
+    margin: 0% auto;
+    border: steelblue 2px solid;
 }
 
-body .cardGroup {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    padding: 0%;
-}
-
-.card {
-    display: flex;
-    /* display, flex-direction */
-    flex-direction: column;
-    border: 1px solid #CAD0D2;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.card__description {
-    /* display, flex-direction, justify-content, align-items */
-    padding: 15px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.card__descriptionIcon {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.card__descriptionText {
-    color: #57727C;
-    font-size: 12px;
-    text-align: center;
-    max-width: calc(100% - 30px);
-}
-
-.card__price {
-    text-align: center;
-    color: #57727C;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 5px 15px;
-    border-top: 1px solid #D7DBDD;
-    background-color: #EEF3F5;
-}
-
-.cardGroup__card {
-    width: 100%;
-    border: 2px solid black;
-    border-radius: 0;
-}
-
-.cardGroup__cardDescription {
-    /* flex-grow, flex-shrink, flex-basis */
-    flex-grow: 1;
-    flex-shrink: 2;
-    flex-basis: auto;
-}
-
-
-/* } */
-
-
-/* @media only screen and (min-width: 800px) {
-    body {
-        width: 710px;
-        margin: 0 auto;
-        padding: 0%;
+@media only screen and (min-width: 320px) {
+    .icon {
+        color: #BCD2DA;
     }
+    body {
+        display: flex;
+        max-width: 710px;
+        margin: 0px auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    body .cardGroup {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        overflow: hidden;
+        margin: 0px auto;
+    }
+    .card {
+        display: flex;
+        /* display, flex-direction */
+        flex-direction: column;
+        border: 1px solid #CAD0D2;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    .card__description {
+        /* display, flex-direction, justify-content, align-items */
+        padding: 15px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card__descriptionIcon {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .card__descriptionText {
+        color: #57727C;
+        font-size: 12px;
+        text-align: center;
+        max-width: calc(100% - 30px);
+    }
+    .card__price {
+        text-align: center;
+        color: #57727C;
+        font-size: 12px;
+        font-weight: 700px;
+        padding: 5px 15px;
+        border-top: 1px solid #D7DBDD;
+        background-color: #EEF3F5;
+    }
+    .cardGroup__card {
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 0;
+    }
+    .cardGroup__cardDescription {
+        /* flex-grow, flex-shrink, flex-basis */
+        flex-basis: auto;
+    }
+}
 
-.cardGroup {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #CAD0D2;
-    border-radius: 4px;
-    overflow: hidden;
+@media only screen and (min-width: 800px) {
+    body {
+        display: inline-block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    body .cardGroup {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        border-radius: 4px;
+        overflow: hidden;
+        width: 100%;
+    }
+    .cardGroup__card {
+        justify-content: right;
+        width: 100%;
+        height: auto;
+    }
 }
-.cardGroup__card {
-    height: 100%;
-    width: 100%;
-}
-} */
